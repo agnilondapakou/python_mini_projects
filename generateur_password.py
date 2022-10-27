@@ -10,7 +10,8 @@ while True:
             break
         taille = int(nombre)
         if taille > 0:
-            print("".join(random.sample(alphabet, taille)))
+            mot_de_pass = "".join(random.sample(alphabet, taille))
+            print("Votre mot de pass est : " + mot_de_pass)
         else:
             print("Veuillez entrer une valeur superieure a 0!")
     except:
